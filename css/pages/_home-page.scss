@@ -5,7 +5,6 @@
   .hero-container {
     position: relative;
     margin-bottom: 80px;
-    overflow: hidden;
     .uk-grid {
       position: relative;
       z-index: 1;
@@ -45,6 +44,15 @@
 
 /* ------------------- Keynote Speakers ------------------- */
 
+  #position-fix-1 {
+    left: calc(50% - 58px);
+  }
+
+  #position-fix-6 {
+
+    left: calc(50% - 75px);
+  }
+
   .keynote-speakers {
 
     
@@ -81,6 +89,16 @@
       .lecturer-picture{
         margin-bottom: 10px;
         height: calc(100% - 34px);
+        position: relative;
+
+        .position-fix {
+          display: block;
+          position: absolute;
+          max-width: 100vw;
+          top: calc(50% - 17px);
+          transform: translate(-50%, -50%);
+          height: inherit;
+        }
 
         img {
           object-fit: cover;
@@ -146,6 +164,8 @@
     
   }
 
+
+
   .gray-wrapper{
     background-attachment: #ccc;
   }
@@ -165,8 +185,8 @@
 
       .hero-cover {
         bottom: -8px;
-        //left: 28%;
-        //background-position-x: left;
+        left: 7%;
+        background-position-x: 88%;
       }
     }
 
@@ -205,8 +225,10 @@
     width: 150px;
     height: 150px;
     float: left;
+    text-align: center;
     img {
-      width: 100%;
+      width: auto;
+      max-height: 100px;
     }
   }
 }
@@ -228,7 +250,7 @@ footer{
 
   h3:after {
     margin-top: 0.5em;
-    background-color: #D97928;
+    background-color: $violet;
   }
 
   .sponsors {
@@ -251,13 +273,34 @@ footer{
   .footer-logo {
     width: 120px;
     display: block;
-    margin: 0 auto;
+    margin-right: auto;
     padding-bottom: 35px;
 
-    img {
-      padding-top: 44px;
+    .contact-information {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 15px;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 5px;
+        height: 22px;
+        align-items: end;
+        img {
+          height: auto;
+          width: unset;
+          margin-bottom: 15px;
+          max-width: 22px;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+      }
     }
   }
+
   .social-icon {
     text-align: center;
     font-size: 28px;
@@ -269,6 +312,14 @@ footer{
   }
   .developed-by {
     margin: 5px;
+  }
+}
+
+@media (max-width: $sm) {
+  footer {
+    .footer-logo {
+      margin: 0 auto;
+    }
   }
 }
 
