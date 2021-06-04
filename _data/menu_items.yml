@@ -1,17 +1,31 @@
+#list_title: Navbar items
+#list:
+#
+#- title: Inicio
+#  url: /
+#
+#- title: Cursos
+#  url: /cursos/
+#
+#- title: Testimonios
+#  url: /testimonios/
+#
+#- title: Patrocinadores
+#  url: /#patrocinadores
+#
+#- title: Contacto
+#url: /contacto
 list_title: Navbar items
 list:
 
-- title: Inicio
-  url: /
+  - title: Home
+    url: /
 
-- title: Cursos
-  url: /cursos/
+  - title: Schedule
+    url: /schedule/
 
-- title: Testimonios
-  url: /testimonios/
+  - title: Hotels
+    url: /hotels/
 
-- title: Patrocinadores
-  url: /#patrocinadores
-
-- title: Contacto
-url: /contacto
+  - title: Tickets
+    url: /#tickets

@@ -1,3 +1,7 @@
+:root {
+    --violet: #d086ff;
+}
+
 html {
     font: normal 16px Nunito Sans, sans-serif
 }
@@ -70,14 +74,20 @@ p {
 
 .uk-button-primary,
 .uk-button:hover {
-    background: #22af60;
-    color: #fff
+    background: var(--violet);
+    border-color: var(--violet);
+    color: #000000;
 }
 
 .uk-button-primary:hover {
     background: #fff;
-    border-color: #22af60;
-    color: #22af60
+    /*border-color: #d086ff;*/
+    /*color: #22af60*/
+}
+
+.uk-button-secondary {
+    border-color: var(--violet);
+    color: #000000;
 }
 
 .uk-container {
@@ -260,12 +270,13 @@ h1.logo {
 
 #home-page {
     position: relative;
-    top: -42px
+    /*top: -42px*/
 }
 
 #home-page .hero-container {
     position: relative;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    overflow: hidden;
 }
 
 #home-page .hero-container .uk-grid {
@@ -279,8 +290,9 @@ h1.logo {
     bottom: 0;
     width: 100%;
     min-height: 378px;
-    background: url(../../img/home/hero-cover-min.png) 0 0 no-repeat;
-    background-size: auto
+    background: url(../img/mamacientifica-img-1.jpeg) center no-repeat;
+    background-size: cover;
+    background-position-x: -255px;
 }
 
 #home-page .location-and-date-copy {
@@ -292,16 +304,16 @@ h1.logo {
     margin-bottom: 50px
 }
 
-#home-page .about-pycaribbean h3:after {
-    background-color: #22af60
-}
+/*#home-page .about-pycaribbean h3:after {*/
+/*    background-color: #22af60*/
+/*}*/
 
 #home-page .about-pycaribbean p {
     color: #9b9b9b
 }
 
 #home-page h3:after {
-    background-color: #22af60
+    background-color: var(--violet);
 }
 
 #home-page .keynote-speakers {
@@ -310,7 +322,6 @@ h1.logo {
 
 #home-page .keynote-speakers h3:after {
     margin-top: .5em;
-    background-color: #d97928
 }
 
 #home-page .keynote-speakers .lecturer-description {
@@ -413,7 +424,7 @@ h1.logo {
 
 #home-page .other-activities h3:after {
     margin-top: .5em;
-    background-color: #d97928
+    /*background-color: #d97928*/
 }
 
 @media (max-width:768px) {
@@ -422,8 +433,8 @@ h1.logo {
     }
     #home-page .hero-container .hero-cover {
         bottom: -8px;
-        left: 28%;
-        background-position-x: left
+        /*left: 28%;*/
+        /*background-position-x: left*/
     }
 }
 
@@ -610,7 +621,7 @@ html body #slider-with-blocks-1 .royalSlider {
 
 body #slider-with-blocks-1 .rsOverflow[style],
 body .royalSlider {
-    height: 660px
+    height: 540px
 }
 
 body #slider-with-blocks-1 .rsMinW {
@@ -877,6 +888,13 @@ h2.schedule-day {
     }
 }
 
+@media screen and (min-width:520px) {
+    body #slider-with-blocks-1 .rsOverflow[style],
+    body .royalSlider {
+        height: 390px!important
+    }
+}
+
 @media screen and (min-width:768px) {
     h3 {
         font-size: 24px
@@ -939,7 +957,7 @@ h2.schedule-day {
     }
     body #slider-with-blocks-1 .rsOverflow[style],
     body .royalSlider {
-        height: 390px!important
+        height: 260px!important
     }
     .rsMinW .rsBullets {
         bottom: 0!important
@@ -968,4 +986,8 @@ h2.schedule-day {
     #home-page .hero-container .hero-cover {
         min-height: 528px
     }
+}
+
+#home-page .royal-slider .uk-width-1-1 > p:nth-child(2) {
+    margin: 0;
 }
