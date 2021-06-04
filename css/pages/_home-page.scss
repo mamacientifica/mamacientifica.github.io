@@ -5,6 +5,7 @@
   .hero-container {
     position: relative;
     margin-bottom: 80px;
+    overflow: hidden;
     .uk-grid {
       position: relative;
       z-index: 1;
@@ -15,8 +16,9 @@
       bottom: 0;
       width: 100%;
       min-height: 378px;
-      //background: url('../../img/home/header_image.jpeg') 0 0 no-repeat;
-      background-size: auto;
+      background: url('../../img/mamacientifica-img-1.jpeg') 0 0 no-repeat;
+      background-size: cover;
+      background-position-x: -255px;
     }
   }  
 
@@ -28,18 +30,16 @@
   .about-pycaribbean {
     margin-bottom: 50px;
 
-    h3:after { background-color: $primary-color; }
     p { color: $grey; }
   }
   
   .about-pycaribbean {
     margin-bottom: 50px;
 
-    h3:after { background-color: $primary-color; }
     p { color: $grey; }
   }
 
-  h3:after { background-color: $primary-color; }
+  h3:after { background-color: $violet; }
   
 
 
@@ -53,7 +53,6 @@
 
     h3:after {
       margin-top: 0.5em;
-      background-color: #D97928;
     }
     .lecturer-description{
       opacity: 0;
@@ -148,7 +147,6 @@
     margin-bottom: 56px;
     h3:after {
       margin-top: 0.5em;
-      background-color: #D97928;
     }
   }
 
@@ -158,8 +156,8 @@
 
       .hero-cover {
         bottom: -8px;
-        left: 28%;
-        background-position-x: left;
+        //left: 28%;
+        //background-position-x: left;
       }
     }
 
@@ -343,10 +341,10 @@ html body #slider-with-blocks-1  .royalSlider {
 }
 
 body #slider-with-blocks-1 .rsOverflow[style]{
-  height: 660px;
+  height: 540px;
 }
 body .royalSlider {
-  height: 660px;
+  height: 540px;
 }
 
 body #slider-with-blocks-1 .rsMinW{
