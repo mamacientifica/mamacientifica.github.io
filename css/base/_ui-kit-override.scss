@@ -3,27 +3,28 @@
   padding-bottom: 0.3em;
   text-transform: uppercase;
   font-weight: 600;
-  color: $primary-color;
+  color: $violet;
   border-radius: 0;
-  border: 2px solid $primary-color;
+  border: 2px solid $violet;
   background: white;
 }
 
 .uk-button:hover {
-  background: $primary-color;
-  border-color: $primary-color;
-  color: $white;
+  background: $violet;
+  border-color: $violet;
+  color: $black;
 }
 
 .uk-button-primary {
-  color: $white;
-  background: $primary-color;
+  color: $black;
+  background: $violet;
+  border-color: $violet;
 }
 
 .uk-button-primary:hover {
     background: $white;
-    border-color: $primary-color;
-    color: $primary-color;
+    border-color: $violet;
+    color: $violet;
 }
 
 .uk-container {

@@ -1,14 +1,20 @@
 list_title: Navbar items
 list:
+#
+#- title: Inicio
+#  url: /
 
-- title: Home
-  url: /
+- title: Testimonios
+  url: /#testimonios
 
-- title: Schedule
-  url: /schedule/
+- title: Talleres
+  url: /#talleres
 
-- title: Hotels
-  url: /hotels/
+- title: Patrocinadores
+  url: /#patrocinadores
+
+- title: Contacto
+  url: /#contacto
 
 - title: Tickets
   url: /#tickets
