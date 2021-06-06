@@ -10,8 +10,8 @@ list:
 - title: Talleres
   url: /#talleres
 
-- title: Patrocinadores
-  url: /#patrocinadores
+# - title: Patrocinadores
+#   url: /#patrocinadores
 
 - title: Contacto
   url: /#contacto
