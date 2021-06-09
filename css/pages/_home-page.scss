@@ -55,6 +55,10 @@
     left: calc(50% - 58px);
   }
 
+  #position-fix-2 {
+    left: calc(50% + 50px);
+  }
+
   #position-fix-6 {
 
     left: calc(50% - 75px);
@@ -80,18 +84,41 @@
 
     .lecturer {
       width: 100%;
-      height: 410px;
+      height: 515px;
       border: solid 1px #D8D8D8;
       position: relative;
       overflow: hidden;
       margin-top: 20px;
       margin: 20px auto 0 auto;
 
-
       &:hover .lecturer-description {
         opacity: 1;
         position: absolute;
         top: 0;
+      }
+
+      a.workshop-buy-button {
+        border: 2px solid $primary-color;
+        //height: 42px;
+        background-color: $primary-color;
+        color: #fff;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        //font-size: 20px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 47px;
+        text-decoration: none;
+
+        &:hover {
+          background: #fff;
+          border-color: $primary-color;
+          color: $primary-color;
+        }
+
       }
 
       .lecturer-picture {
@@ -433,7 +460,7 @@ body #slider-with-blocks-1 .rsOverflow[style] {
 }
 
 body .royalSlider {
-  height: 540px;
+  height: 560px;
 }
 
 body #slider-with-blocks-1 .rsMinW {
@@ -463,6 +490,11 @@ body .rsMinW .rsThumbs {
 }
 
 .royalSlider {
+
+  .testimony-name, .workshop-name {
+    font-weight: bold;
+  }
+
   .uk-width-1-1 {
     background-color: #efefef;
     padding: 10px;
@@ -478,10 +510,6 @@ body .rsMinW .rsThumbs {
 
     p {
       margin: 0;
-    }
-
-    .testimony-name {
-      //font-weight: bolder;
     }
 
     .testimony-stars-container {

@@ -37,8 +37,12 @@
     left: calc(50% - 20px) !important;
   }
 
+  #home-page #position-fix-2 {
+    left: calc(50% - 15px);
+  }
+
   #home-page #position-fix-6 {
-    left: calc(50% - 39px);
+    left: calc(50% - 33px);
   }
 }
 
@@ -61,7 +65,7 @@
 @media screen and (min-width: 520px) {
   body #slider-with-blocks-1 .rsOverflow[style],
   body .royalSlider {
-    height: 390px !important
+    height: 405px !important
   }
 }
 
@@ -177,7 +181,7 @@ footer {
   }
   body #slider-with-blocks-1 .rsOverflow[style],
   body .royalSlider {
-    height: 260px !important;
+    height: 300px !important;
   }
   .rsMinW .rsBullets {
     bottom: 0px !important;
