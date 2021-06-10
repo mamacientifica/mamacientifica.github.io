@@ -102,7 +102,7 @@
         //height: 42px;
         background-color: $primary-color;
         color: #fff;
-        width: 80%;
+        width: calc(100% - 36px);
         display: flex;
         justify-content: center;
         align-items: center;
