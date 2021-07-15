@@ -16,12 +16,12 @@ permalink: /
 
                     <!--                    <p class="dashed">The premiere Python conference of the Caribbean</p>-->
 
-                    <p class="date">26 Y 27 DE JUNIO 2021</p>
+                    <p class="date">18 Y 19 DE SEPTIEMBRE 2021</p>
                 </div>
                 <div class="call-to-action">
                     <a class="uk-button uk-button-primary"
                        target="_blank"
-                       href="https://www.eventbrite.com/e/cuidando-a-mi-bebe-sin-miedo-tickets-158178081901">
+                       href="https://www.eventbrite.com/e/cuidando-a-mi-bebe-sin-miedo-tickets-163108998405?ref=estw">
                         COMPRAR TICKET
                     </a>
                     <a class="uk-button uk-button-secondary"
@@ -265,7 +265,7 @@ permalink: /
                             <div class="lecturer-description">
                                 <h4>Cuidando A Mi Bebé Sin Miedo
                                 </h4>
-                                <h4>(26 y 27 de junio 2021)</h4>
+                                <h4>(18 y 19 de septiembre 2021)</h4>
                                 <h4>USD$49</h4>
                                 <p>En este taller online reunimos toda la información necesaria, práctica y basada en
                                     evidencia para ayudarte con esos primeros meses cuidando a tu bebé. Para que puedas
@@ -273,7 +273,7 @@ permalink: /
                                     que abandonar la comodidad de tu hogar.
                                 </p>
                                 <a class="uk-button uk-button-primary workshop-buy-button"
-                                   href="https://www.eventbrite.com/e/cuidando-a-mi-bebe-sin-miedo-tickets-158178081901"
+                                   href="https://www.eventbrite.com/e/cuidando-a-mi-bebe-sin-miedo-tickets-163108998405?ref=estw"
                                    target="_blank">Comprar</a>
                             </div>
                         </div>
@@ -293,24 +293,38 @@ permalink: /
     <section id="tickets">
         <div class="eventbrite-wrapper">
             <h3>Tickets</h3>
-            <div id="eventbrite-widget-container-158178081901"></div>
+            <!-- Noscript content for added SEO -->
+            <noscript><a href="https://www.eventbrite.com/e/cuidando-a-mi-bebe-sin-miedo-tickets-163108998405" rel="noopener noreferrer" target="_blank"></noscript>
+            <!-- You can customize this button any way you like -->
+            <button id="eventbrite-widget-modal-trigger-163108998405" type="button">Buy Tickets</button>
+            <noscript></a>Buy Tickets on Eventbrite</noscript>
             <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
             <script type="text/javascript">
-                var exampleCallback = function () {
+                var exampleCallback = function() {
                     console.log('Order complete!');
                 };
                 window.EBWidgets.createWidget({
-                    // Required
                     widgetType: 'checkout',
-                    eventId: '158178081901',
-                    iframeContainerId: 'eventbrite-widget-container-158178081901',
-                    // Optional
-                    iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                    eventId: '163108998405',
+                    modal: true,
+                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-163108998405',
+                    onOrderComplete: exampleCallback
                 });
             </script>
         </div>
     </section>
+
+    <div id="conocenos" class="conocenos">
+        <div class="uk-width-1-1">
+            <h3>Conócenos</h3>
+        </div>
+        <div class="talleres-grid uk-grid uk-clearfix">
+            <div class="uk-width-1">
+                <img src="img/Minitaller%20gratis.png" alt="Minitaller gratis"/>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 </section>
